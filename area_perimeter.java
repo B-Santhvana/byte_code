@@ -1,12 +1,22 @@
-///Length and breadth of a rectangle are 5 and 7 respectively. Write a program to calculate the area and perimeter of the rectangle.
-package firstAssignment;
+//24.Write a program to print which one is Greater than (Area/Perimeter)?
+package Third_Assignment;
 
 public class area_perimeter {
 
 	public static void main(String[] args) {
-		int length=5,breadth=7;
-		System.out.println("area of rectangle="+(length*breadth));//35
-		System.out.println("perimeter of rectangle="+(2*(length+breadth)));//24
+		int length=50;
+		int breadth=20;
+		int area=length*breadth;
+		int perimeter=2*(length+breadth);
+		if(area>perimeter) {
+			System.out.println("area is greater than perimeter");
+		}
+		else if(area<perimeter) {
+			System.out.println("perimeter is greater than area");
+		}
+		else {
+			System.out.println("equal length and breadth");
+		}
 
 	}
 
